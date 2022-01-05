@@ -1,8 +1,11 @@
 const $canvas = document.getElementById('playground');
 const $imageContainer = document.getElementById('image-container');
 const $img = document.getElementById('img');
+let isOriginalImageVisible = false;
 document.querySelector('button').onclick = () => {
-    $img.style.display = 'block';
+    isOriginalImageVisible = !isOriginalImageVisible;
+    console.log(isOriginalImageVisible)
+    $img.style.display = isOriginalImageVisible ? 'block' : 'none';
 };
 
 const SIZE = 500;
