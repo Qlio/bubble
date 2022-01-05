@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Bubbled Image</title>
+    <style>
+      #playground {
+        height: 500px;
+        width: 500px;
+      }
+      #image-container, #img {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="playground"></canvas>
+    <button>Show Real Image</button>
+    <img src="https://source.unsplash.com/random/500x500/?animal,objects" alt="Image" id="img" crossorigin="anonymous">
+
+    <canvas id="image-container"></canvas>
+    <script src="./index.js"></script>
+  </body>
+</html>

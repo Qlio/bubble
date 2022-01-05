@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "bubble-image",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
