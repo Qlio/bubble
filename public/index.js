@@ -4,7 +4,6 @@ const $img = document.getElementById('img');
 let isOriginalImageVisible = false;
 document.querySelector('button').onclick = () => {
     isOriginalImageVisible = !isOriginalImageVisible;
-    console.log(isOriginalImageVisible)
     $img.style.display = isOriginalImageVisible ? 'block' : 'none';
 };
 
