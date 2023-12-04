@@ -54,7 +54,7 @@ class Circle {
                 child.draw();
             }
         } else {
-            if (parseInt(this.radius) < 1) {
+            if (this.radius <= .5) {
                 this.path2D.rect(this.x - this.radius, this.y - this.radius, this.radius * 2, this.radius * 2);
             } else {
                 this.path2D.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
@@ -72,7 +72,7 @@ class Circle {
 
     divide() {
         const childRadius = this.radius / 2;
-        if (childRadius < 1) return;
+        if (childRadius < .5) return;
 
         const centers = [
             [ this.x - childRadius, this.y - childRadius ],
